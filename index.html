@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="height=device-height, initial-scale=1">
 
-<link rel="shortcut icon" href="favicon.ico">
+<!--<link rel="shortcut icon" href="favicon.ico">-->
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<script src="js/jquery.js"></script>
 	<script src="_assets/js/index.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/sql.js"></script>
 
     
 
@@ -34,20 +35,18 @@
 		<h2 align="center">1. Facial Appearance</h2>
           <div align="center" >  <img src="img/appearance.png" width="100px" height="100px" ></div>
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que1">
-            <li data-value="BeardGang" data-category="A" data-weight="3.3"><a href="#">BeardGang </a></li>
-            <li data-value="Fresh" data-category="A" data-weight="3.3"><a href="#">Fresh</a></li>
-            <li data-value="Goatie" data-category="A" data-weight="3.3"><a href="#">Goatie</a></li>
-
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <!--<button type="submit" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</button>-->
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q2" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
+            <li data-value="BeardGang" data-category="A" data-weight="3.33"><a href="#">BeardGang </a></li>
+            <li data-value="Fresh" data-category="A" data-weight="2.22"><a href="#">Fresh</a></li>
+            <li data-value="Goatie" data-category="A" data-weight="1.11"><a href="#">Goatie</a></li>
 
         </ul>
+
+         <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <!--<button  class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</button>-->
+                    </div>
+                    <div class="ui-block-b"><a  href="#q2" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+        </fieldset>
 
 	</div><!-- /content -->
 
@@ -70,21 +69,19 @@
          <div align="center" >  <img src="img/completion.png" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que2">
-            <li data-value="Fanta" data-category="A" data-weight="2.5"><a href="#">Fanta </a></li>
-            <li data-value="Charcoal" data-category="A" data-weight="2.5"><a href="#">Charcoal </a></li>
-            <li data-value="Albino" data-category="A" data-weight="2.5"><a href="#">Albino </a></li>
-            <li data-value="Chocolate" data-category="A" data-weight="2.5"><a href="#">Chocolate </a></li>
-
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q1" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q3" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
+            <li data-value="Fanta" data-category="A" data-weight="2.49"><a href="#">Fanta </a></li>
+            <li data-value="Charcoal" data-category="A" data-weight="1.66"><a href="#">Charcoal </a></li>
+            <li data-value="Albino" data-category="A" data-weight="0.83"><a href="#">Albino </a></li>
+            <li data-value="Chocolate" data-category="A" data-weight="3.33"><a href="#">Chocolate </a></li>
 
         </ul>
+
+        <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q1" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q3" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+        </fieldset>
 
 	</div><!-- /content -->
 
@@ -106,21 +103,20 @@
         <div align="center" >  <img src="img/stat.png" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que3">
-            <li data-value="6 Pack" data-category="A" data-weight="0"><a href="#">6 Pack </a></li>
-            <li data-value="Amusement pack (Big belle)" data-category="A" data-weight="0"><a href="#">Amusement pack (Big belle) </a></li>
-            <li data-value="In need of stomach infrastructure" data-category="A" data-weight="0"><a href="#">In need of stomach infrastructure </a></li>
-            <li data-value="Just there" data-category="A" data-weight="0"><a href="#">Just there </a></li>
+            <li data-value="6 Pack" data-category="A" data-weight="3.33"><a href="#">6 Pack </a></li>
+            <li data-value="Amusement pack (Big belle)" data-category="A" data-weight="0.83"><a href="#">Amusement pack (Big belle) </a></li>
+            <li data-value="In need of stomach infrastructure" data-category="A" data-weight="1.66"><a href="#">In need of stomach infrastructure </a></li>
+            <li data-value="Just there" data-category="A" data-weight="2.49"><a href="#">Just there </a></li>
 
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q1" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q4" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
 
         </ul>
+
+         <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q1" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q4" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -143,21 +139,20 @@
         <div align="center" >  <img src="img/agerange.png" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que4">
-            <li data-value="Alhaji" data-category="P" data-weight="0"><a href="#">Alhaji </a></li>
-            <li data-value="Sugar boy" data-category="P" data-weight="0"><a href="#">Sugar boy </a></li>
-             <li data-value="Boyfriend" data-category="P" data-weight="0"><a href="#">Boyfriend </a></li>
-            <li data-value="Aristo" data-category="P" data-weight="0"><a href="#">Aristo </a></li>
+            <li data-value="Alhaji" data-category="P" data-weight="2.5"><a href="#">Alhaji </a></li>
+            <li data-value="Sugar boy" data-category="P" data-weight="7.5"><a href="#">Sugar boy </a></li>
+             <li data-value="Boyfriend" data-category="P" data-weight="10"><a href="#">Boyfriend </a></li>
+            <li data-value="Aristo" data-category="P" data-weight="5"><a href="#">Aristo </a></li>
 
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q3" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q5" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
 
         </ul>
+
+        <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q3" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q5" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -180,22 +175,22 @@
         <div align="center" >  <img src="img/dresssense.png" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que5">
-            <li data-value="Bobrisky" data-category="A" data-weight="0"><a href="#">Bobrisky </a></li>
-            <li data-value="I Just Came Back" data-category="A" data-weight="0"><a href="#">I Just Came Back </a></li>
-             <li data-value="Bank staff" data-category="A" data-weight="0"><a href="#">Bank staff </a></li>
-            <li data-value="Village Head Master" data-category="A" data-weight="0"><a href="#">Village Head Master </a></li>
-             <li data-value="Polo and Jean" data-category="A" data-weight="0"><a href="#">Polo and Jean </a></li>
+            <li data-value="Bobrisky" data-category="A" data-weight="1.34"><a href="#">Bobrisky </a></li>
+            <li data-value="I Just Got Back" data-category="A" data-weight="1.34"><a href="#">I Just Came Back </a></li>
+             <li data-value="Bank staff" data-category="A" data-weight="3.33"><a href="#">Bank staff </a></li>
+            <li data-value="Village Head Master" data-category="A" data-weight="0.67"><a href="#">Village Head Master </a></li>
+             <li data-value="Polo and Jean" data-category="A" data-weight="2.68"><a href="#">Polo and Jean </a></li>
 
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q4" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q6" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
+       
 
         </ul>
+
+        <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q4" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q6" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -218,20 +213,18 @@
         <div align="center" >  <img src="img/height.png" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que6">
-            <li data-value="Down to Earth (Very Brief)" data-category="A" data-weight="0"><a href="#">Down to Earth (Very Brief) </a></li>
-            <li data-value="Average" data-category="A" data-weight="0"><a href="#">Average</a></li>
-             <li data-value="Goliath" data-category="A" data-weight="0"><a href="#">Goliath </a></li>
-
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q5" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q7" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
+            <li data-value="Down to Earth (Very Brief)" data-category="A" data-weight="1.11"><a href="#">Down to Earth (Very Brief) </a></li>
+            <li data-value="Average" data-category="A" data-weight="2.22"><a href="#">Average</a></li>
+             <li data-value="Goliath" data-category="A" data-weight="3.33"><a href="#">Goliath </a></li>
 
         </ul>
+
+        <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q5" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q7" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -254,21 +247,20 @@
         <div align="center" >  <img src="img/leg.png" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que7">
-            <li data-value="K-leg" data-category="A" data-weight="0"><a href="#">K-leg </a></li>
-            <li data-value="Bow Leg" data-category="A" data-weight="0"><a href="#">Bow Leg </a></li>
-            <li data-value="Straight" data-category="A" data-weight="0"><a href="#">Straight </a></li>
-            <li data-value="Yam Leg" data-category="A" data-weight="0"><a href="#">Yam Leg </a></li>
+            <li data-value="K-leg" data-category="A" data-weight="3.33"><a href="#">K-leg </a></li>
+            <li data-value="Bow Leg" data-category="A" data-weight="3.33"><a href="#">Bow Leg </a></li>
+            <li data-value="Straight" data-category="A" data-weight="3.33"><a href="#">Straight </a></li>
+            <li data-value="Yam Leg" data-category="A" data-weight="3.33"><a href="#">Yam Leg </a></li>
 
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q6" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q8" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
 
         </ul>
+
+ <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q6" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q8" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -291,21 +283,20 @@
          <div align="center" >  <img src="img/attitude.jpg" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que8">
-            <li data-value="Omo Baba Olowo" data-category="P" data-weight="0"><a href="#">Omo Baba Olowo </a></li>
-            <li data-value="Mr Nice guy" data-category="P" data-weight="0"><a href="#">Mr Nice guy </a></li>
-            <li data-value="Turn up king" data-category="P" data-weight="0"><a href="#">Turn up king </a></li>
-            <li data-value="Brother John" data-category="P" data-weight="0"><a href="#">Brother John </a></li>
+            <li data-value="Omo Baba Olowo" data-category="P" data-weight="2.5"><a href="#">Omo Baba Olowo </a></li>
+            <li data-value="Mr Nice guy" data-category="P" data-weight="7.5"><a href="#">Mr Nice guy </a></li>
+            <li data-value="Turn up king" data-category="P" data-weight="5"><a href="#">Turn up king </a></li>
+            <li data-value="Brother John" data-category="P" data-weight="10"><a href="#">Brother John </a></li>
 
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q7" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q9" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
 
         </ul>
+
+         <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q7" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q9" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -328,23 +319,21 @@
          <div align="center" >  <img src="img/job.png" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que9">
-            <li data-value="Office" data-category="W" data-weight="0"><a href="#">Office </a></li>
-            <li data-value="Bank" data-category="W" data-weight="0"><a href="#">Bank </a></li>
-            <li data-value="Importer and exporter" data-category="W" data-weight="0"><a href="#">Importer and exporter </a></li>
-            <li data-value="Oil and gas" data-category="W"><a href="#" data-weight="0">"Oil and gas"</a></li>
-            <li data-value="Hustler with prospect" data-category="W" data-weight="0"><a href="#">Hustler with prospect </a></li>
+            <li data-value="Office" data-category="W" data-weight="12"><a href="#">Office </a></li>
+            <li data-value="Bank" data-category="W" data-weight="8"><a href="#">Bank </a></li>
+            <li data-value="Importer and exporter" data-category="W" data-weight="16"><a href="#">Importer and exporter </a></li>
+            <li data-value="Oil and gas" data-category="W"><a href="#" data-weight="20">"Oil and gas"</a></li>
+            <li data-value="Hustler with prospect" data-category="W" data-weight="4"><a href="#">Hustler with prospect </a></li>
 
-
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q8" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q10" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
 
         </ul>
+
+        <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q8" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q10" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -367,22 +356,21 @@
          <div align="center" >  <img src="img/car.png" width="100px" height="100px" ></div>
 
         <ul data-role="listview" data-count-theme="b" data-inset="true" id="que10">
-            <li data-value="Range rover" data-category="W" data-weight="0"><a href="#">Range rover </a></li>
-            <li data-value="Toyota/Honda" data-category="W" data-weight="0"><a href="#">Toyota/Honda </a></li>
-            <li data-value="Yerinbeto" data-category="W" data-weight="0"><a href="#">Yerinbeto  </a></li>
-            <li data-value="Picanto" data-category="W" data-weight="0"><a href="#">Picanto </a></li>
-            <li data-value="Danfo" data-category="W" data-weight="0"><a href="#">Danfo </a></li>
+            <li data-value="Range rover" data-category="W" data-weight="10"><a href="#">Range rover </a></li>
+            <li data-value="Toyota/Honda" data-category="W" data-weight="8"><a href="#">Toyota/Honda </a></li>
+            <li data-value="Yerinbeto" data-category="W" data-weight="4"><a href="#">Yerinbeto  </a></li>
+            <li data-value="Picanto" data-category="W" data-weight="6"><a href="#">Picanto </a></li>
+            <li data-value="Danfo" data-category="W" data-weight="2"><a href="#">Danfo /Legedez</a></li>
 
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q9" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#q11" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
-                </fieldset>
-            </li>
 
         </ul>
+
+        <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q9" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#q11" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Next</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -408,16 +396,14 @@
             <li data-value="Yes" data-category="" data-weight="0"><a href="#">Yes </a></li>
             <li data-value="No" data-category="" data-weight="0"><a href="#">No </a></li>
 
-            <li class="ui-body ui-body-b">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a type="submit" href="#q10" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
-                    </div>
-                    <div class="ui-block-b"><a type="submit" href="#finish" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Finish</a></div>
-                </fieldset>
-            </li>
-
         </ul>
+
+         <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a  href="#q10" class="ui-btn  ui-btn-a ui-icon-carat-l ui-btn-icon-left ui-li-icon" >Back</a>
+                    </div>
+                    <div class="ui-block-b"><a  href="#result" class="ui-btn  ui-btn-a ui-icon-carat-r ui-btn-icon-right">Finish</a></div>
+                </fieldset>
 
 	</div><!-- /content -->
 
@@ -428,17 +414,22 @@
 <!-- Question 11 Ends -->
 
 
-<!-- Question 12 Starts -->
-<div data-role="page" id="finish" height="100%">
+<!-- Question Result Starts -->
+<div data-role="page" id="result" height="100%">
 
 	<div data-role="header" style="background-color:#F07F1F">
+         <a href="index.html" data-icon="none" data-iconpos="notext"></a>
 		<h1 style="color:#ffffff">Find My Hubby</h1>
+        <a href="index.html" data-icon="refresh" data-mini="true" data-iconpos="notext">Restart</a>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content" style="background-color:#86BA3B">
 		<h2 align="center">Get Hubby Results Below</h2>
 
     
+        <canvas id="resultcontainer" width="300" height="150" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+
 
 	</div><!-- /content -->
 
@@ -449,17 +440,44 @@
 <!-- Question 12 Ends -->
 
 <script>
+            // var result = {};
+            var result = "";
+            var ans1 = "";
+            var ans2 = "";
+            var ans3 = "";
+            var ans4 = "";
+            var ans5 = "";
+            var ans6 = "";
+            var ans7 = "";
+            var ans8 = "";
+            var ans9 = "";
+            var ans10 = "";
+            var ans11 = "";
+            // var ans1 = {};
+            // var ans2 = {};
+            // var ans3 = {};
+            // var ans4 = {};
+            // var ans5 = {};
+            // var ans6 = {};
+            // var ans7 = {};
+            // var ans8 = {};
+            // var ans9 = {};
+            // var ans10 = {};
+            // var ans11 = {};
+
             $("#que1").on("click", "li", function() { 
                 var selectedText  = $(this).attr("data-value");
                 var queCategory  = $(this).attr("data-category");
                 var optionWeight  = $(this).attr("data-weight");
                 var queNumber  = "1";
-                var total_weight ="10";
+                var total_weight ="6.66";
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
+                // ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
+                ans1 = "qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+= ans1;
+                console.log(result);
                 console.log(ans1);
              });
 
@@ -468,13 +486,15 @@
                 var queCategory  = $(this).attr("data-category");
                 var optionWeight  = $(this).attr("data-weight");
                 var queNumber  = "2";
-                var total_weight ="10";
+                var total_weight ="8.31";
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                 //ans2 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
+                 ans2  = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+               result+= ans2;
+                console.log(result);
+                console.log(ans2);
              });
 
              $("#que3").on("click", "li", function() { 
@@ -482,13 +502,15 @@
                 var queCategory  = $(this).attr("data-category");
                 var optionWeight  = $(this).attr("data-weight");
                 var queNumber  = "3";
-                var total_weight ="10";
+                var total_weight ="8.31";
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                //ans3 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
+                ans3 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+= ans3;
+                console.log(result);
+                console.log(ans3);
              });
 
              $("#que4").on("click", "li", function() { 
@@ -500,9 +522,10 @@
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                ans4 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+= ans4;
+                console.log(result);
+                console.log(ans4);
              });
 
              $("#que5").on("click", "li", function() { 
@@ -514,9 +537,10 @@
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                ans5 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+= ans5;
+                console.log(result);
+                console.log(ans5);
              });
 
              $("#que6").on("click", "li", function() { 
@@ -528,9 +552,10 @@
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                ans6 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+= ans6;
+                console.log(result);
+                console.log(ans6);
              });
 
              $("#que7").on("click", "li", function() { 
@@ -542,9 +567,10 @@
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                ans7 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+= ans7;
+                console.log(result);
+                console.log(ans7);
              });
 
              $("#que8").on("click", "li", function() { 
@@ -556,9 +582,10 @@
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                ans8 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+= ans8;
+                console.log(result);
+                console.log(ans8);
              });
 
              $("#que9").on("click", "li", function() { 
@@ -570,9 +597,10 @@
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                ans9 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+=ans9;
+                console.log(result);
+                console.log(ans9);
              });
 
              $("#que10").on("click", "li", function() { 
@@ -584,9 +612,10 @@
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                ans10 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+                result+= ans10;
+                console.log(result);
+                console.log(ans10);
              });
 
              $("#que11").on("click", "li", function() { 
@@ -598,10 +627,106 @@
 
                 // alert( ans1 ); 
 
-                var ans1 = {"qid":queNumber, "data":{"que_text":selectedText, "ans_weight":optionWeight, "total_weight":total_weight,"que_cat":queCategory}};
-                alert( ans1 ); 
-                console.log(ans1);
+                ans11 = "  qid|"+queNumber+"|data - |que_text:"+selectedText +"|ans_weight|"+optionWeight+"|total_weight|"+total_weight+"|que_cat|"+queCategory;
+               result+= ans11;
+                console.log(result);
              });
+
+             $("#result").on("pagecreate", function() { 
+                 alert("Result Page");
+
+                 var c=document.getElementById("resultcontainer");
+                    var ctx=c.getContext("2d");
+
+                    ctx.font="20px Georgia";
+                    ctx.fillText("Hello! Oluwafikayo Ajayi",15,50);
+
+                    // ctx.font="30px Verdana";
+                    // // Create gradient
+                    // var gradient=ctx.createLinearGradient(0,0,c.width,0);
+                    // gradient.addColorStop("0","magenta");
+                    // gradient.addColorStop("0.5","blue");
+                    // gradient.addColorStop("1.0","red");
+                    // // Fill with gradient
+                    // ctx.fillStyle=gradient;
+                    // ctx.fillText("Big smile!",10,90);
+
+                    //Present the result in Table format 
+                    //Send the details to SQLite or the API created.
+
+
+                    // var xhr = new XMLHttpRequest();
+                    // xhr.open('GET', 'js/test.sqlite', true);
+                    // xhr.responseType = 'arraybuffer';
+
+                    // xhr.onload = function(e) {
+                    // var uInt8Array = new Uint8Array(this.response);
+                    // var db = new SQL.Database(filename="ade.sqlite",uInt8Array);
+                    // var contents = db.exec("insert into test (surname) values ('john')");
+                    // // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
+
+                    // console.log(contents);
+                    // };
+                    // xhr.send();
+
+                // var myObject, newfile;
+                // myObject = new ActiveXObject("Scripting.FileSystemObject");
+                // newfile = myObject.CreateTextFile("testing.txt", false);
+
+                // });
+
+                // var fh = fopen("test.txt", 3); // Open the file for writing
+                // console.log(fh);
+
+                // if(fh!=-1) // If the file has been successfully opened
+                // {
+                //     var str = "Some text goes here...";
+                //     fwrite(fh, str); // Write the string to a file
+                //     fclose(fh); // Close the file 
+                // }
+
+
+// jQuery.ajax({
+//     type: "POST",
+//     url: 'api.php',
+//     dataType: 'json',
+//     data: {data: result},
+
+//     success: function (obj, textstatus) {
+
+//         console.log(textstatus);
+//         console.log(obj);
+//                 //   if( !('error' in obj) ) {
+//                 //       yourVariable = obj.result;
+//                 //   }
+//                 //   else {
+//                 //       console.log(obj.error);
+//                 //   }
+//             }
+// })
+
+
+console.log(result);
+
+    var username=result;
+
+    $.ajax({
+        url:'api.php',
+        method:'get',
+        data:{name:username},
+            error:function(err)
+            {
+                //alert("Sucess");
+            },
+            success:function(data)
+            {
+                alert("Success" + data);
+                console.log(data);
+            }
+    });
+
+
+});
 
 
 
