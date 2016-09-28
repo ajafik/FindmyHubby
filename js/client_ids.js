@@ -49,7 +49,9 @@ var OAUTH_PROXY_URL = {
 //
 // The manin Redirect URI
 //
-var REDIRECT_URI = '/hello.js/redirect.html';
+var REDIRECT_URI = '/index.html';
 if (typeof chrome === 'object' && typeof chrome.identity === 'object' && chrome.identity.launchWebAuthFlow) {
-	REDIRECT_URI = 'https://'+window.location.hostname+'.chromiumapp.org/redirect.html';
+	REDIRECT_URI = 'https://'+window.location.hostname+'.chromiumapp.org/index.html';
 }
+
+var SERVER_API_URI = 'local.findmyhubby.com/api.php';  // http://api.findmyhuppy.com.ng
