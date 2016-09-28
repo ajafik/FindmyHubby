@@ -14,6 +14,16 @@
 	<script src="_assets/js/index.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/sql.js"></script>
+    <script src="js/client_ids.js"></script>
+    <script src="js/hello.js"></script>
+    <script src="js/hello.phonegap.js"></script>
+    <script src="js/hello.chromeapp.js"></script>
+
+    <script src="js/modules/facebook.js"></script>
+    <script src="js/modules/twitter.js"></script>
+    <script src="js/modules/google.js"></script>
+
+    <script src="js/uiProfile.js"></script>
 
     
 
@@ -426,6 +436,11 @@
 	<div role="main" class="ui-content" style="background-color:#86BA3B">
 		<h2 align="center">Get Hubby Results Below</h2>
 
+    <button id='google' class="profile">Unlock With Google</button>
+    <button id='facebook' class="profile">Unlock With Facebook</button>
+    <button id='twitter' class="profile">Unlock With Twitter</button>
+
+
     
         <canvas id="resultcontainer" width="300" height="150" style="border:1px solid #d3d3d3;">
             Your browser does not support the HTML5 canvas tag.</canvas>
@@ -440,6 +455,9 @@
 <!-- Question 12 Ends -->
 
 <script>
+
+
+
             // var result = {};
             var result = "";
             var ans1 = "";
