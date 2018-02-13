@@ -34,6 +34,7 @@ hello.on('auth.login', function(r) {
 	        success:function(res)
             {
                 alert("Success" + res);
+                alert (result);
                 console.log(res);
             },
             error:function(err)

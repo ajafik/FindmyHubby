@@ -653,95 +653,25 @@
              $("#result").on("pagecreate", function() { 
                  alert("Result Page");
 
-                 var c=document.getElementById("resultcontainer");
-                    var ctx=c.getContext("2d");
+                 
+            console.log(result);
 
-                    ctx.font="20px Georgia";
-                    ctx.fillText("Hello! Oluwafikayo Ajayi",15,50);
+                var username=result;
 
-                    // ctx.font="30px Verdana";
-                    // // Create gradient
-                    // var gradient=ctx.createLinearGradient(0,0,c.width,0);
-                    // gradient.addColorStop("0","magenta");
-                    // gradient.addColorStop("0.5","blue");
-                    // gradient.addColorStop("1.0","red");
-                    // // Fill with gradient
-                    // ctx.fillStyle=gradient;
-                    // ctx.fillText("Big smile!",10,90);
-
-                    //Present the result in Table format 
-                    //Send the details to SQLite or the API created.
-
-
-                    // var xhr = new XMLHttpRequest();
-                    // xhr.open('GET', 'js/test.sqlite', true);
-                    // xhr.responseType = 'arraybuffer';
-
-                    // xhr.onload = function(e) {
-                    // var uInt8Array = new Uint8Array(this.response);
-                    // var db = new SQL.Database(filename="ade.sqlite",uInt8Array);
-                    // var contents = db.exec("insert into test (surname) values ('john')");
-                    // // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
-
-                    // console.log(contents);
-                    // };
-                    // xhr.send();
-
-                // var myObject, newfile;
-                // myObject = new ActiveXObject("Scripting.FileSystemObject");
-                // newfile = myObject.CreateTextFile("testing.txt", false);
-
-                // });
-
-                // var fh = fopen("test.txt", 3); // Open the file for writing
-                // console.log(fh);
-
-                // if(fh!=-1) // If the file has been successfully opened
-                // {
-                //     var str = "Some text goes here...";
-                //     fwrite(fh, str); // Write the string to a file
-                //     fclose(fh); // Close the file 
-                // }
-
-
-// jQuery.ajax({
-//     type: "POST",
-//     url: 'api.php',
-//     dataType: 'json',
-//     data: {data: result},
-
-//     success: function (obj, textstatus) {
-
-//         console.log(textstatus);
-//         console.log(obj);
-//                 //   if( !('error' in obj) ) {
-//                 //       yourVariable = obj.result;
-//                 //   }
-//                 //   else {
-//                 //       console.log(obj.error);
-//                 //   }
-//             }
-// })
-
-
-console.log(result);
-
-    var username=result;
-
-    $.ajax({
-        url:'api.php',
-        method:'get',
-        data:{name:username},
-            error:function(err)
-            {
-                //alert("Sucess");
-            },
-            success:function(data)
-            {
-                alert("Success" + data);
-                console.log(data);
-            }
-    });
+                $.ajax({
+                    url:'api.php',
+                    method:'get',
+                    data:{name:username},
+                        error:function(err)
+                        {
+                            //alert("Sucess");
+                        },
+                        success:function(data)
+                        {
+                            alert("Success" + data);
+                            console.log(data);
+                        }
+                });
 
 
 });
