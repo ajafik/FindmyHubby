@@ -1,14 +1,12 @@
 <?php
 header('Content-Type: application/json');
 
-// $data = $_POST['data'];
-
 $data= $_GET['name'];
 
 $servername = "localhost";
-$username = "findmyhu_ajafik";
-$password = "Terragon@123";
-$dbname = "findmyhu_hubbydata";
+$username = "username";
+$password = "Password";
+$dbname = "db_name";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -29,7 +27,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-
-
 
 ?>
